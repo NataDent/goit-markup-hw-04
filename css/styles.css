@@ -73,6 +73,8 @@ body {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container.header-container {
@@ -204,6 +206,9 @@ body {
   display: block;
   margin: auto;
   padding: 16px 32px;
+}
+.hero-btn:is(:hover, :focus) {
+  background-color: var(--second-background-color);
 }
 
 /**------------- FEATURES------------ */
@@ -579,6 +584,11 @@ body {
   max-width: 360px;
   background: #ffffff;
   border: 1px solid #e7e9fc;
+}
+
+.examples-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .examples-item-info {
