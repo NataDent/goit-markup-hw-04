@@ -376,7 +376,57 @@ body {
   fill: #ffffff;
 }
 
+/**-------------CUSTOMERS----------*/
+
+.customers.section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-list-item {
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  gap: 24px;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #8e8f99;
+}
+
+.customers-link:is(:hover, :focus) .customers-icon {
+  fill: #404bbf;
+}
+
+.customers-link:is(:hover, :focus) {
+  border: #404bbf;
+}
+
 /**------------- FOOTER------------ */
+
 .footer.section {
   background-color: #2e2f42;
   justify-content: flex-start;
