@@ -73,8 +73,6 @@ body {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container.header-container {
@@ -411,8 +409,6 @@ body {
 .customers-list-item {
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
   gap: 24px;
 }
 
@@ -423,15 +419,21 @@ body {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
-}
-.customers-link:is(:hover, :focus) .customers-icon {
-  fill: #404bbf;
-  border: #404bbf;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
 
 .customers-icon {
-fill: inherit;
+fill: currentColor;
 }
+
+.customers-link:is(:hover, :focus) .customers-icon {
+  fill: #404bbf;
+}
+.customers-link:is(:hover, :focus) {
+  border-color: #404bbf;
+}
+
 /**------------- FOOTER------------ */
 
 .footer.section {
